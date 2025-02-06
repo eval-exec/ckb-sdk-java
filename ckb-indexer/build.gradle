@@ -1,11 +1,7 @@
 description 'SDK for CKB indexer'
 
 dependencies {
-    implementation(project(":utils"))
-    implementation(project(":serialization"))
-    implementation project(":core")
-
-    implementation "com.google.code.gson:gson:$gsonVersion"
+    compile project(":core")
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'

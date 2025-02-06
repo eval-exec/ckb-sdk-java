@@ -1,13 +1,8 @@
 description 'SDK for CKB mercury'
 
 dependencies {
-    implementation project(":core")
-    implementation project(":ckb-indexer")
-    implementation project(":utils")
-
-    implementation("org.bouncycastle:bcprov-jdk15on:$bouncycastleVersion")
-    implementation "com.google.code.gson:gson:$gsonVersion"
-
+    compile project(":core")
+    compile project(":ckb-indexer")
     testImplementation project(":ckb")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.0")
